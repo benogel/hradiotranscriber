@@ -41,9 +41,9 @@ module.exports = {
 			template: 'demo/index.html'
 		}),
 		//new CopyWebpackPlugin([{from: 'lib/pthread-main.js', to: 'lib/'}],{copyUnmodified: true}),
-		new CopyWebpackPlugin([{from: 'lib/irtdab.js', to: 'lib/'}],{copyUnmodified: true}),
-		new CopyWebpackPlugin([{from: 'lib/irtdab.worker.js', to: 'lib/'}],{copyUnmodified: true}),
-		new CopyWebpackPlugin([{from: 'demo/css/materialize.min.css', to: 'demo/'}],{copyUnmodified: true}),
+		new CopyWebpackPlugin([{from: 'lib/irtdab.js', to: 'lib'}],{copyUnmodified: true}),
+		new CopyWebpackPlugin([{from: 'lib/irtdab.worker.js', to: 'lib'}],{copyUnmodified: true}),
+		new CopyWebpackPlugin([{from: 'demo/css/materialize.min.css', to: 'demo'}],{copyUnmodified: true}),
 		new CopyWebpackPlugin([{from: 'demo/materialize.js', to: 'demo/'}],{copyUnmodified: true}),
 	]/*,
 
