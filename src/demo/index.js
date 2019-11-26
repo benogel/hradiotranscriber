@@ -1,6 +1,6 @@
 // playBtn
 const playPauseBtn = document.querySelector('#startAudioContext');
-const socket = new WebSocket("wss://127.0.0.1");
+const socket = new WebSocket("wss://127.0.0.1:3000");
 
 playPauseBtn.addEventListener('click', () => {
        // play or pause track depending on state
