@@ -1,0 +1,57 @@
+#sharredArrayWarning {
+	z-index: 999;
+}
+#serverIssue {
+	z-index: 800;
+}
+
+.spinner {
+	width: 40px;
+}
+
+#logo {
+	width: 100%;
+}
+
+.warning {
+	display: none;
+	position: absolute;
+	top:10%;
+	left:10%;
+	right:10%;
+	background-color: white;
+	padding: 30px;
+	-webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+	box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+	}
+
+#audioArea {
+	text-align: center;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#slsArea {
+	width: 320px;
+	height: 240px;
+}
+
+#sls {
+	max-width: 320px;
+	max-height: 240px;
+}
+
+#slsAreaWrapper {
+	width: 100%;
+	text-align: center;
+}
+
+#slsArea {
+	margin-left: auto;
+	margin-right: auto;
+}
+#slsMeta, #slsArea, #audioMeta, #dls, #streamMeta, #streamMeta {
+	text-align: center;
+}
