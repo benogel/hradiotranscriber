@@ -1,6 +1,12 @@
 // playBtn
 const playPauseBtn = document.querySelector('#startAudioContext');
 const socket = new WebSocket("wss://127.0.0.1:3000");
+socket.onopen = () => {
+    console.log('socket open');
+    ediPlayer.addEventListener('encodedAudioData', (pcm) => {
+        socket.send(pcm);
+    });
+}
 
 playPauseBtn.addEventListener('click', () => {
        // play or pause track depending on state
@@ -34,11 +40,6 @@ ediPlayer.addEventListener('stateChange', (state) => {
     }
 });
 
-
-ediPlayer.addEventListener('encodedAudioData', (pcm) => {
-    console.log(pcm.length);
-    exampleSocket.send(pcm);
-});
 
 const prettyPrintJson = (json) => {
     M.toast({html: '<pre>' + JSON.stringify(json, null, 10) + '</pre>'});
